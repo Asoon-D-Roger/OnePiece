@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+.box {
+    height: 330px;
+    width: 330px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+span {
+    color: orangered;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+
+.img {
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    translate:inherit;
+    border-radius: 20px;
+    filter:grayscale(100%) ;
+}
+
+.img:hover {
+    filter: grayscale(0%);
+    transition: 0.5s ease-in;
+}
