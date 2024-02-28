@@ -1,0 +1,502 @@
+.background-container {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top: 0px;
+    left: 0px;
+    background: #99dcfb;
+}
+
+.mountains-container {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 120px;
+    left: 0px;
+    background: transparent;
+}
+
+.mountain-1 {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+    background: rgb(202, 248, 196);
+    clip-path: path("M 0,230 S 153,-41 270,14 S 449,-4 522,84 S 726,-33 800,230");
+    animation: mountain-1 35s linear infinite;
+}
+
+@keyframes mountain-1 {
+    form {
+        left: 800px;
+    }
+    to {
+        left: -800px;
+    }
+}
+
+.mountain-2 {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    top: 50px;
+    left: 0px;
+    background: rgb(165, 214, 69);
+    clip-path: path("M 0,200 S 31,6 96,23 S 164,-36 242,37 S 314,-13 386,34 S 465,50 800,200");
+    animation: mountain-2 25s linear infinite;
+}
+
+@keyframes mountain-2 {
+    form {
+        left: 600px;
+    }
+    to {
+        left: -800px;
+    }
+}
+
+.mountain-3 {
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    top: 130px;
+    left: 0px;
+    background: rgb(0 , 127,0);
+    clip-path: path("M 0,100 S 101,13 125,58 S 205,22 300,60 S 330,12 408,64 S 454,11 600,100");
+    animation: mountain-3 15s linear infinite;
+}
+
+@keyframes mountain-2 {
+    form {
+        left: 650px;
+    }
+    to {
+        left: -600px;
+    }
+}
+
+.cloud-1 {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    top: -5px;
+    left: 450px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 20px;
+    animation: cloud-1 10s ease-in infinite;
+  }
+  
+  .cloud-1::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    top: 40px;
+    left: 15px;
+    background: white;
+    border-radius: 20px;
+  }
+  
+  @keyframes cloud-1 {
+    from {
+      left: 500px;
+    }
+    to {
+      left: -200px;
+    }
+  }
+  
+  .cloud-2 {
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    top: 120px;
+    left: 0px;
+    background: white;
+    opacity: 0.6;
+    border-radius: 20px;
+    animation: cloud-2 12s ease-out infinite;
+  }
+  
+  .cloud-2::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: 0px;
+    left: -45px;
+    background: white;
+    border-radius: 20px;
+  }
+  
+  .cloud-2::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    top: 40px;
+    left: -15px;
+    background: white;
+    border-radius: 20px;
+  }
+  
+  @keyframes cloud-2 {
+    from {
+      left: 500px;
+      opacity: 0.2;
+    }
+    30% {
+      opacity: 0.9;
+    }
+    to {
+      left: -200px;
+      opacity: 0.2;
+    }
+  }
+  
+  .cloud-3 {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 240px;
+    left: 0px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 20px;
+    animation: cloud-3 12s linear infinite;
+  }
+  
+  .cloud-3::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: 0px;
+    left: 110px;
+    background: white;
+    border-radius: 20px;
+  }
+  
+  @keyframes cloud-3 {
+    from {
+      left: 510px;
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    to {
+      left: -150px;
+      opacity: 0;
+    }
+  }
+  
+  .Foreground-container {
+    position: absolute;
+    width: 1700px;
+    height: 150px;
+    top: 350px;
+    left: 0;
+    background: #33312b;
+    animation: foreground 1s linear infinite;
+    filter: blur(1px);
+  }
+  
+  .street-sideline {
+    position: absolute;
+    width: 1700px;
+    height: 20px;
+    top: 120px;
+    left: 0;
+    background: white;
+  }
+  
+  .street-midline {
+    position: absolute;
+    width: 1700px;
+    height: 10px;
+    top: 35px;
+    left: 0;
+    background: repeating-linear-gradient(
+      to right,
+      #33312b 5% 15%,
+      white 15% 20%
+    );
+  }
+  
+  @keyframes foreground {
+    from {
+      left: 0;
+    }
+    to {
+      left: -51%;
+    }
+  }
+  
+  /* Car */
+  .car-container {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 10px;
+    left: 10px;
+    animation: car-body 1s linear infinite;
+  }
+  
+  @keyframes car-body {
+    from {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .car-roof {
+    position: absolute;
+    width: 198px;
+    height: 137px;
+    top: 224px;
+    left: 118px;
+    background: black;
+    clip-path: path("M 5 146 C 0 -24 196 -49 229 146 Z");
+  }
+  
+  .car-roof::before {
+    content: "";
+    position: absolute;
+    width: 198px;
+    height: 135px;
+    top: 0px;
+    left: 0px;
+    background: #c2211a;
+    clip-path: path("M 7 146 C 3 -23 193 -46 228 146 Z");
+  }
+  
+  .car-body {
+    position: absolute;
+    width: 195px;
+    height: 77px;
+    top: 280px;
+    left: 165px;
+    background: #c2211a;
+    border-radius: 0px 45px 5px 0px;
+    border: 2px solid black;
+    border-left: transparent;
+  }
+  
+  .window {
+    position: absolute;
+    width: 119px;
+    height: 33px;
+    top: 245px;
+    left: 165px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 35px 35px 0px 0px;
+  }
+  
+  .window::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 33px;
+    top: 0px;
+    left: 40px;
+    background: transparent;
+    border-left: 2px solid black;
+  }
+  
+  .head-light {
+    position: absolute;
+    width: 18px;
+    height: 5px;
+    top: 297px;
+    left: 329px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  
+  .fog-light {
+    position: absolute;
+    width: 6px;
+    height: 5px;
+    top: 341px;
+    left: 348px;
+    background: white;
+    border-radius: 5px 0px 0px 5px;
+    border: 2px solid black;
+  }
+  
+  .design-line {
+    position: absolute;
+    width: 86px;
+    height: 2px;
+    top: 329px;
+    left: 200px;
+    background: white;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid black;
+  }
+  
+  .design-line::before {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 2px;
+    top: 5px;
+    left: 25px;
+    background: white;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid black;
+  }
+  
+  .design-line::after {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 2px;
+    top: 11px;
+    left: 40px;
+    background: white;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid black;
+  }
+  
+  .front-tire {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 330px;
+    left: 290px;
+    background: white;
+    border: 7px solid black;
+    border-radius: 50%;
+    animation: tire-animation 0.5s linear infinite;
+  }
+  
+  .front-tire::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 8px;
+    left: 8px;
+    border: 7px solid gray;
+    border-radius: 50%;
+  }
+  
+  .front-tire::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 3px;
+    left: 3px;
+    border: 2px solid transparent;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 50%;
+    filter: blur(2px);
+  }
+  
+  @keyframes tire-animation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(350deg);
+    }
+  }
+  
+  .back-tire {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 330px;
+    left: 155px;
+    background: white;
+    border: 7px solid black;
+    border-radius: 50%;
+    animation: tire-animation 0.5s linear infinite;
+  }
+  
+  .back-tire::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 8px;
+    left: 8px;
+    border: 7px solid gray;
+    border-radius: 50%;
+  }
+  
+  .back-tire::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 3px;
+    left: 3px;
+    border: 2px solid transparent;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 50%;
+    filter: blur(2px);
+  }
+  
+  .door-knob {
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    top: 289px;
+    left: 208px;
+    background: white;
+    border-radius: 2px 0px 0px 2px;
+    border: 1px solid black;
+  }
+  
+  .tail-light {
+    position: absolute;
+    width: 13px;
+    height: 5px;
+    top: 314px;
+    left: 129px;
+    background: white;
+    border-radius: 3px 3px 3px 0px;
+    border: 2px solid black;
+  }
+  
+  /* Body and Container Settings */
+  /* Center shapes */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Set background and border color */
+  .container {
+    min-width: 500px;
+    height: 500px;
+    border: 5px solid lightgray;
+    background: transparent;
+    position: relative;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
