@@ -1,0 +1,54 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 6rem 5rem auto 5rem;
+    grid-template-columns: 20% auto 20%;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-rows: 6rem 6rem 6rem auto 6rem 6rem;
+        grid-template-columns: 1fr;
+    }
+
+    aside, main {
+        grid-column: 1 / 4;
+    }
+}
+
+nav, header, footer {
+    background: #f6c356;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background: #aaec8a;
+}
+
+aside, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    background: #99c2fe;
+}
+
+main {
+    background: #b881ff;
+}
