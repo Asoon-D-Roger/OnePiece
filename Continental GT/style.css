@@ -1,0 +1,85 @@
+
+body {
+    background-image: url(assets/apex\ grey.jpg);
+    margin: 0;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.title {
+    position: relative;
+    left: 430px;
+    top: 100px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    height: 55px;
+}
+
+nav img {
+    position: relative;
+    left: -600px;
+    width: 230px;
+
+}
+
+nav  {
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+    font-size: 15px;
+    font-family:sans-serif;
+}
+
+nav span:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding-block: 10px;
+    padding-inline: 30px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: skyblue;
+    color: #fff;
+    scale: 0.9;
+}
+
+.container {
+    max-width: 350px;
+    height: 250px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    left: 1000px;
+    top: 250px;
+    border: 3px solid #fff;
+    padding-block: 10px;
+    padding-inline: 30px;
+    border-radius: 20px;
+    font-family: Arial;
+}
+
+.container:hover {
+    transition: all 0.5s;
+    scale: 1.1;
+}
