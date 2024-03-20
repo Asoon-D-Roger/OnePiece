@@ -1,5 +1,5 @@
 :root {
-  --background: #060d23;
+  --background: #0a0a0b49;
   --youtube: #e52d27;
   --white: #fff;
   --meta: #1877f2;
@@ -32,7 +32,7 @@ body {
   border: none;
   background: transparent;
   border-radius: 50%;
-  outline: 2px solid white;
+  outline: 2px solid black;
   cursor: pointer;
   transition: all 0.3s;
   display: grid;
@@ -57,8 +57,8 @@ body {
 }
 
 .social-media-button:hover:nth-child(2) {
-    background: radial-gradient(#feda75 0%, #fa7e1e 5%, #d62976 45%, #962fbf 60%, #4f5bd5 90%);
-}
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+} 
     
 .social-media-button:hover:nth-child(3) {
       background: var(--white);
