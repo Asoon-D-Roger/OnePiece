@@ -1,0 +1,190 @@
+@import "./variables";
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: $bg-navprimary;
+    min-width: 18rem;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .footer-wrapper {
+        display: flex;
+        background: $bg-navprimary;
+        flex-direction: column;
+        padding: 1rem;
+        width: 1300px;
+
+        .footer-top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: start;
+            padding: 1rem 0px;
+            justify-content: space-between;
+
+
+            .footer-headline > h2 {
+                margin: 0%;
+                color: $text-primary;
+            }
+
+            .footer-headline > p {
+                color: $text-primary;
+                margin: 0.25rem 0 1.25rem;
+            }
+
+            .footer-subscribe {
+                display: flex;
+                gap: 0.75rem;
+                flex-wrap: wrap;
+            }
+
+            .footer-subscribe > input {
+                display: flex;
+                border: 2px solid white;
+                color: $text-primary;
+                outline: none;
+                min-height: 2.25rem;
+                background-color: $bg-navprimary;
+                font-size: 1.2rem;
+                flex: 1 0 120px;
+                padding: 0.5rem 0.75rem;
+                border-radius: 1rem;
+            }
+
+            .footer-subscribe > input::placeholder {
+                color: #fff;
+            }
+
+            .footer-subscribe > button {
+                cursor: pointer;
+                background: $bg-navprimary;
+                border: 1px solid $bg-color;
+                border-radius: 1rem;
+                color: #fff;
+                font-size: 18px;
+                min-width: 8rem;
+                min-height: 2.25rem;
+                flex: 1 0 5rem;
+                white-space: nowrap;
+                padding: 0.5rem 0.75rem;
+                border: 2px solid white;
+            }
+
+            .footer-subscribe > button:hover {
+                background: rgb(52, 52, 52);
+            }
+        }
+
+        .footer-columns {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: start;
+            flex: 2 0 14rem;
+            width: 100%;
+            gap: 1rem;
+            padding: 1.5rem  0.5rem 1rem  0.5rem;
+            margin: 0 auto;
+        }
+
+        .footer-columns ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-columns ul a {
+            color: $text-primary;
+            text-decoration: none;
+        }
+
+        .footer-columns ul a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-columns ul li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-columns h3 {
+            color: $text-primary;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .footer-columns > section {
+            min-width: 10rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: start;
+            gap: 1rem;
+            color: $text-primary;
+            margin-bottom: 4rem;
+        }
+
+        .footer-logo img {
+            stroke: $bg-color;
+            stroke-width: 8px;
+            width: 9rem;
+            height: 9rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 5px;
+            margin: 0 0.25rem;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+            padding: 0.5rem 0px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: $text-primary;
+        }
+
+        .footer-bottom > small {
+            margin: 0 0.25rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        
+        .social-text {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .social-links img {
+            width: 1.5rem;
+            height: 1.5rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .social-links img:hover {
+            scale: 1.1;
+        }
+
+        .social-links ul {
+            display: flex;
+            gap: 0.75rem;
+            list-style-type: none;
+        }
+
+    }
+}

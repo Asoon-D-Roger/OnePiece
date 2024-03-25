@@ -1,0 +1,40 @@
+nav {
+    background-color: $bg-navprimary;
+    color: $text-primary;
+
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .center-routes {
+        > * {
+            margin-inline: 10px;
+        }
+    }
+
+    .right-routes {
+        display: flex;
+        gap: 10px;
+
+        > * {
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .text-btn:hover {
+            color: black;
+        }
+
+        .outline-btn {
+            border: 2px solid $bg-color;
+        }
+
+        .outline-btn:hover {
+            background-color: rgb(50, 49, 49);
+        }
+    
+    }
+}
