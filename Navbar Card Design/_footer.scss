@@ -16,7 +16,7 @@ footer {
         background: $bg-navprimary;
         flex-direction: column;
         padding: 1rem;
-        width: 1300px;
+        width: $max-width;
 
         .footer-top {
             display: flex;
