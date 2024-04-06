@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --red:crimson;
+    --yellow:#FFC45D;
+    --green:#53BF9D;
+    --white:whitesmoke;
+}
+
+body,h2 {
+    margin: 0%;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+.landing {
+    background-image: url(assets/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--yellow);
+    min-width: 120px;
+}
+
+#logo {
+    flex: 3;
+    font-size: 1.25rem;
+    min-width: 260px;
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    flex: 1;
+
+}
+
+nav a:hover {
+    color:#ffc45d79 ;
+}
+
+header h2 i,nav a i {
+    margin-right: 0.5rem;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.maintext div {
+    margin-top: 0.75rem;
+}
+
+.tagline1 {
+    color: var(--red);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.tagline2 {
+    color: var(--yellow);
+    font-size: 1.5rem ;
+}
+
+button {
+    width: 20vw;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--green);
+    color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    scale: 0.95;
+    background-color: #38c095c1;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+}
+
+#menuheading,#locheading {
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    font-size: 2.5rem;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+
+.menu th {
+    color: var(--green);
+    font-size: 1.8rem;
+}
+
+table {
+    width: 100%;
+    padding: 1rem;
+}
+
+.menu tr {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+.menu td:nth-child(1) {
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2) {
+    justify-self: right;
+}
+
+.maincourse {
+    grid-row: span 2;
+}
+
+.locations {
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2 {
+    color: var(--green);
+    margin-bottom: 0.8rem;
+}
+
+.locations div {
+    flex: 1;
+    padding: 1rem;
+    min-width: 220px;
+}
+
+footer {
+    background-color: rgb(55, 55, 55);
+    color: var(--white);
+    padding: 0.25rem 1rem;
+}
+
