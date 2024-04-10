@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 95%;
+    margin: 0 auto;
+    background: #0000008d;
+    max-width: 1300px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-block: 50px;
+    border-radius: 10px;
+}
+
+.flex-item {
+    max-width: 300px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+.flex-item img {
+    border-radius: 10px 10px 0 0;
+}
+
+.layer1 {
+    padding-inline: 20px;
+}
+
+.layer1-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.layer2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.layer2-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.layer3 {
+    padding-inline: 20px;
+    padding-bottom: 20px;
+}
+
+.layer3-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.layer3-profile-avatar {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding-block: 5px;
+    padding-inline: 50px;
+    border-radius: 10px;
+    width: 20rem;
+}
+
+button:hover {
+    background-color: #6a686856;
+}
+
+@media (min-width: 800px) {
+    .flex-item {
+      flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .flex-item {
+      flex-basis: calc(25% - 20px);
+    }
+  }
