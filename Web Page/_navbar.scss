@@ -1,0 +1,40 @@
+nav {
+    background-color: $bg-primary;
+    color: $text-primary;
+    padding: 1rem;
+
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .center-routes {
+        > * {
+            margin-inline: 10px;
+        }
+    }
+
+    .right-routes {
+        display: flex;
+        gap: 10px;
+
+        > * {
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .text-btn:hover {
+            color: #AAAAAA;
+        }
+
+        .outline-btn {
+            border: 2px solid #AAAAAA;
+        }
+
+        .outline-btn:hover {
+            background-color: #AAAAAA;
+        }
+    }
+}
