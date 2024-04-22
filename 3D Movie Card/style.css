@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #061519;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+}
+
+.card-content {
+    position: relative;
+    padding: 15rem 5rem;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+}
+
+.card:hover .card-content {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.card-front {
+    background-image: url(assets/bg.jpg);
+    background-position: center;
+    object-fit: fill;
+    background-color: rgba(1, 1, 1, 0.214);
+    align-items: center;
+}
+
+.card-front::before {
+    content: "";
+    position: absolute;
+    inset: 1rem;
+    border: 3px solid rgba(245, 245, 245, 0.571);
+    transform: translateZ(2rem);
+}
+
+.title-1 {
+    font-family: "Anton", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 120%;
+    transform: translateZ(4.4rem);
+    color: #f7f7f7;
+    /* color: #ea4741; */
+    /* color: #f00; */
+}
+
+.title-2 {
+    font-family: "Anton", sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    line-height: 120%;
+    transform: translateZ(4.4rem);
+    color: #f7f7f7;
+    /* color: #ea4741; */
+    /* color: #f00; */
+}
+
+.sub-title {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transform: translateZ(3rem);
+}
+
+.card-back {
+    background-image: url(assets/rob.jpg);
+    transform: rotateY(180deg);
+    gap: 0.5rem;
+}
+
+.back-title {
+    font-family: "Anton", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    align-items: center;
+    transform: translateZ(2rem);
+}
+
+.card-back span {
+    font-weight: 600;
+    color: #f7f7f7;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 2.2rem;
+    color: #f7f7f7;
+    border: 2px solid #f7f7f7;
+    border-radius: 100px;
+    text-align: center;
+    align-self: center;
+    margin-top: 1rem;
+    transform: translateZ(2rem);
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6bdff1d8;
+    color: #020F1A;
+    border: 2px solid #6bdff1d8;
+}
