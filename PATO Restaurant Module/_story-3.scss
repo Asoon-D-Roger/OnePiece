@@ -1,0 +1,71 @@
+.landing-3 {
+    height: 30vh;
+    text-align: center;
+
+    span {
+        font-size: 2.5rem;
+        font-family: 'Courgette', sans-serif;
+        color: $red;
+        position: relative;
+        top: 5rem;
+        transform: translateZ(4rem);
+    }
+
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        letter-spacing: 10px;
+        word-spacing: 3px;
+        line-height: 1.2;
+        font-size: 3.125rem;
+        position: relative;
+        top: 5rem;
+        transform: translateZ(4rem);
+    }
+}
+
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+    border-radius: 10px;
+
+    .gallery-item {
+        width: 100%;
+        height: auto;
+    }
+    
+    button {
+        width: 35%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 15px;
+        background-color: #f7f7f7bd;
+        border: 1px solid #F7F7F7bd;
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        top: -150px;
+        left: 150px;
+    }
+
+    button:hover {
+        background-color: $red;
+        color: $white;
+        transition: 0.4s ease-in;
+        border: 1px solid $red;
+        scale: 0.9;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+    }
+}

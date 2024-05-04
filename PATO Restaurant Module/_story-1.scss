@@ -1,0 +1,69 @@
+.story-1 {
+    background: $background;
+    display: flex;
+    height: 80vh;
+    width: 75vw;
+    
+    .text-1 {
+        position: relative;
+        text-align: center;
+        font-family: 'Courgette';
+        font-size: 1.9rem;
+        color: $red;
+        top: 10rem;
+    }
+
+    .text-2 {
+        position: relative;
+        text-align: center;
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 3.125rem;
+        top: 10rem;
+        letter-spacing: 6px;
+        line-height: 1.5;
+    }
+
+    .para {
+        position: relative;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        max-width: 750px;
+        color: #666666;
+        top: 13rem;
+    }
+
+    .text-3 {
+        position: relative;
+        text-align: center;
+        font-family: 'Montserrat',sans-serif;
+        top: 15rem;
+        text-transform: uppercase;
+    }
+    
+    .text-3 a {
+        text-decoration: none;
+        color: #666666;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .text-3 a:hover {
+        color: $red;
+    }
+
+    .s2 img {
+        height: 390px;
+        width: 390px;
+        position: relative;
+        top: 8rem;
+        left: 18rem;
+        border-radius: 10px;
+    }
+
+    img:hover {
+        scale: 1.1;
+        transition: 0.4s ease-in;
+    }
+}

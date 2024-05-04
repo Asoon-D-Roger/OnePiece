@@ -1,0 +1,39 @@
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    @extend .max-width;
+    padding-top: 1rem;
+    
+    p {
+        font-size: 1.9rem;
+        font-weight: bolder;
+        border: 3px solid $white;
+        padding-inline: 1rem;
+        border-radius: 15px;
+    }
+}
+
+.center-routes {
+    > * {
+        font-family: 'Montserrat';
+      margin-inline: 25px;
+      cursor: pointer;
+    }
+}
+
+span:hover {
+    color: $red;
+}
+
+.right-routes {
+    display: flex;
+    gap: 30px;
+}
+
+i:hover {
+    color: $red;
+}
