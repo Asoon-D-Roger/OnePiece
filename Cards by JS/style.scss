@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import "./global-class";
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    @import "./navbar";
+    @import "./card";
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        border: 2px solid $nav-secondary;
+        width: 20rem;
+        background-color: $nav-secondary;
+        color: $nav-color;
+        padding: 5px;
+        font-weight: 500;
+        border-radius: 0 20px 20px 0;
+        transition: 0.5s;
+    }
+
+    h1:hover {
+        letter-spacing: 4px;
+    }
+}

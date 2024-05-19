@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+.max-width {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 95%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+}
+body nav {
+  background-color: #222222;
+  color: #D3D9D4;
+  height: 4.5rem;
+}
+body nav .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 1rem;
+}
+body nav .nav-content p {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "MedievalSharp";
+  letter-spacing: 1px;
+  z-index: 1;
+  transition: 0.5s;
+  flex: 0.4;
+}
+body nav .nav-content p:hover {
+  letter-spacing: 4px;
+}
+body nav .center-routes > * {
+  font-family: "Montserrat";
+  margin-inline: 25px;
+  cursor: pointer;
+}
+body nav span:hover {
+  color: #6cb3a9;
+}
+body nav .right-routes {
+  display: flex;
+  gap: 30px;
+}
+body nav i:hover {
+  color: #6cb3a9;
+}
+body .card-wrap {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+body .card-wrap .card-item {
+  max-width: 400px;
+  height: 400px;
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  flex-basis: 100%;
+  box-shadow: 5px 5px 25px #6cb3a9, -5px -5px 25px #6cb3a9;
+}
+body .card-wrap .card-item .image {
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .card-wrap .card-item .content {
+  display: block;
+  padding-left: 5px;
+}
+body .card-wrap .card-item span {
+  font-size: 18px;
+  letter-spacing: 2px;
+  position: relative;
+  font-weight: 550;
+  color: #333333;
+  top: 10px;
+}
+body .card-wrap .card-item p {
+  font-size: 14px;
+  position: relative;
+  top: 30px;
+  line-height: 1.1rem;
+}
+body .card-wrap .card-item .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 12%;
+}
+body .card-wrap .card-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #6cb3a9;
+  padding: 10px;
+  padding-inline: 25px;
+  border-radius: 15px;
+  background-color: #6cb3a9;
+  color: #f7f7f7;
+  transition: 0.5s;
+}
+body .card-wrap .card-item a:hover {
+  letter-spacing: 3px;
+}
+body h1 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  border: 2px solid #222222;
+  width: 20rem;
+  background-color: #222222;
+  color: #D3D9D4;
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 0 20px 20px 0;
+  transition: 0.5s;
+}
+body h1:hover {
+  letter-spacing: 4px;
+}/*# sourceMappingURL=style.css.map */

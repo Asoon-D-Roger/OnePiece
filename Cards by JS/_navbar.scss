@@ -1,0 +1,51 @@
+nav {
+    background-color: $nav-secondary;
+    color: $nav-color;
+    height: 4.5rem;
+
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 1rem;
+    
+        p {
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: "MedievalSharp";
+            letter-spacing: 1px;
+            z-index: 1;
+            transition: 0.5s;
+            flex: 0.4;
+        }
+
+        p:hover {
+            letter-spacing: 4px;
+        }
+    }
+    
+    .center-routes {
+        >* {
+            font-family: 'Montserrat';
+            margin-inline: 25px;
+            cursor: pointer;
+        }
+    }
+    
+    span:hover {
+        color: $green;
+    }
+    
+    .right-routes {
+        display: flex;
+        gap: 30px;
+    }
+    
+    i:hover {
+        color: $green;
+    }
+
+}
+
