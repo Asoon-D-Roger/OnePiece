@@ -32,3 +32,14 @@ body {
         letter-spacing: 4px;
     }
 }
+
+@media (max-width: 1000px) {
+    .card-wrap {
+        flex-wrap: wrap;
+    }
+
+    .card-item {
+        flex-basis: calc(50% - 20px);
+
+    }
+}
