@@ -1,5 +1,5 @@
 :root {
-  --background: #0a0a0b49;
+  --background: #0a0a0a;
   --youtube: #e52d27;
   --white: #fff;
   --meta: #1877f2;
@@ -20,15 +20,23 @@ body {
 }
 
 .social-media-buttons {
+  width: 500px;
+  height: 500px;
+  border: 2px solid whitesmoke;
+  background: whitesmoke;
+  border-radius: 20%;
+  box-shadow: 10px 10px 20px whitesmoke, -10px -10px 20px whitesmoke;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
+  z-index: 1;
 }
 
 .social-media-button {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   border: none;
   background: transparent;
   border-radius: 50%;
@@ -61,7 +69,7 @@ body {
 } 
     
 .social-media-button:hover:nth-child(3) {
-      background: var(--white);
+      background: lightblue;
 }
 
 .social-media-button:hover:nth-child(4) {
